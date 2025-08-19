@@ -21,3 +21,7 @@ jobs:
       - name: Build with Maven
         working-directory: pahanaBackend/
         run: mvn clean install -Dmaven.test.skip=true
+      - name: Build with Maven (Frontend)
+        working-directory: pahanaFrontend/
+        run: mvn clean install -Dmaven.test.skip=true
+        
